@@ -24,21 +24,25 @@ Mais `assets/`, `img/` (uma pasta por código de produto), `404.html`, `robots.t
 
 ---
 
-## 2. Antes de publicar — o que falta preencher
+## 2. Situação da publicação
 
 ### Os links de checkout
 
-Todos apontam hoje para `https://pay.hotmart.com/SUBSTITUIR-<CÓDIGO>`. Estão num arquivo só:
+Os 21 códigos estão ligados ao checkout real da Hotmart, num arquivo só:
 
 ```
 assets/checkouts.js
 ```
 
-Troque a URL de cada código, faça commit, e as oito páginas passam a apontar para o lugar certo. Nada mais precisa mudar. Enquanto o link não existir, o botão continua visível e marcado como `aria-disabled`.
+Levantados no painel da Hotmart (produto › Links de divulgação › Página de Pagamento) em 16-09-2026, com nome e preço conferidos no checkout. Todos têm oferta única, então nenhum link leva `?off=`. O link aponta para o produto, não para o preço: mudar o valor da oferta não muda o link. Criar uma segunda oferta, despublicar ou excluir o produto, sim.
+
+Para trocar um link, edite a URL do código, faça commit, e as oito páginas passam a apontar para o lugar certo. Código fora da lista fica com o botão marcado como `aria-disabled`.
+
+LH-201 e LH-202 custam **R$ 47,90**, não R$ 47: são do lote antigo e o preço foi mantido de propósito. O LH-202 foi renomeado na Hotmart para *O Sprint que Decide*, o mesmo título do site.
 
 ### As três frases de capa das vitrines
 
-Precisam da sua aprovação, porque só a primeira está declarada em documento:
+Aprovadas por Marco em 16-09-2026, como estão:
 
 | Vitrine | Frase | Origem |
 |---|---|---|
