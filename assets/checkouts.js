@@ -1,25 +1,28 @@
 /* Um lugar só para os links de checkout da Hotmart.
-   Troque a URL de cada código e republique. Nada mais precisa mudar. */
+   Troque a URL de cada código e republique. Nada mais precisa mudar.
+   Código fora da lista fica com o botão desativado (aria-disabled).
+   Levantamento: painel Hotmart, 16-09-2026.
+   Fora por enquanto:
+   LH-201 — checkout cobra R$ 47,90; o site anuncia R$ 47.   Link: https://pay.hotmart.com/D107580774R
+   LH-202 — checkout cobra R$ 47,90 e usa o título antigo.   Link: https://pay.hotmart.com/I107580689I */
 window.CHECKOUTS = {
-  "LH-103": "https://pay.hotmart.com/SUBSTITUIR-LH-103",
-  "LH-101": "https://pay.hotmart.com/SUBSTITUIR-LH-101",
-  "LH-102": "https://pay.hotmart.com/SUBSTITUIR-LH-102",
-  "LH-104": "https://pay.hotmart.com/SUBSTITUIR-LH-104",
-  "LH-201": "https://pay.hotmart.com/SUBSTITUIR-LH-201",
-  "LH-202": "https://pay.hotmart.com/SUBSTITUIR-LH-202",
-  "LH-204": "https://pay.hotmart.com/SUBSTITUIR-LH-204",
-  "LH-302": "https://pay.hotmart.com/SUBSTITUIR-LH-302",
-  "LH-401": "https://pay.hotmart.com/SUBSTITUIR-LH-401",
-  "LH-501": "https://pay.hotmart.com/SUBSTITUIR-LH-501",
-  "LH-701": "https://pay.hotmart.com/SUBSTITUIR-LH-701",
-  "LH-801": "https://pay.hotmart.com/SUBSTITUIR-LH-801",
-  "LH-806": "https://pay.hotmart.com/SUBSTITUIR-LH-806",
-  "LH-807": "https://pay.hotmart.com/SUBSTITUIR-LH-807",
-  "LH-808": "https://pay.hotmart.com/SUBSTITUIR-LH-808",
-  "LH-809": "https://pay.hotmart.com/SUBSTITUIR-LH-809",
-  "LH-810": "https://pay.hotmart.com/SUBSTITUIR-LH-810",
-  "KIT-TRILHA": "https://pay.hotmart.com/SUBSTITUIR-KIT-TRILHA",
-  "KIT-COLECAO": "https://pay.hotmart.com/SUBSTITUIR-KIT-COLECAO",
-  "KIT-BIBLIOTECA": "https://pay.hotmart.com/SUBSTITUIR-KIT-BIBLIOTECA",
-  "KIT-MUSIC": "https://pay.hotmart.com/SUBSTITUIR-KIT-MUSIC"
+  "LH-103": "https://pay.hotmart.com/Y107623317P",
+  "LH-101": "https://pay.hotmart.com/E107623547J",
+  "LH-102": "https://pay.hotmart.com/I107627033Y",
+  "LH-104": "https://pay.hotmart.com/U107626962M",
+  "LH-204": "https://pay.hotmart.com/G107626921A",
+  "LH-302": "https://pay.hotmart.com/H107645371E",
+  "LH-401": "https://pay.hotmart.com/B107627244G",
+  "LH-501": "https://pay.hotmart.com/E107626288V",
+  "LH-701": "https://pay.hotmart.com/O107626422E",
+  "LH-801": "https://pay.hotmart.com/K107623800X",
+  "LH-806": "https://pay.hotmart.com/I107626851L",
+  "LH-807": "https://pay.hotmart.com/X107627423M",
+  "LH-808": "https://pay.hotmart.com/D107627747O",
+  "LH-809": "https://pay.hotmart.com/H107627955G",
+  "LH-810": "https://pay.hotmart.com/G107628064F",
+  "KIT-TRILHA": "https://pay.hotmart.com/B107640207G",
+  "KIT-COLECAO": "https://pay.hotmart.com/I107640345T",
+  "KIT-BIBLIOTECA": "https://pay.hotmart.com/Y107640484C",
+  "KIT-MUSIC": "https://pay.hotmart.com/U107640654K"
 };
