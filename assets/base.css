@@ -1,0 +1,192 @@
+/* ============================================================
+   Garage — chassi de páginas de venda e vitrines
+   Um arquivo para todas as páginas. A identidade de cada linha
+   entra por três variáveis declaradas no <head> de cada página:
+   --linha, --linha-texto, --linha-neg (e --linha-caixa).
+   ============================================================ */
+:root{
+  --acao:#D2461B;
+  --acao-h:#B83C16;
+  --preto:#000;
+  --tinta:#1B252C;
+  --tinta2:#42505A;
+  --borda:#C6D2CE;
+  --papel:#fff;
+  --papel2:#F6F8F9;
+  --base:19px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--papel);color:var(--tinta);
+  font-family:"IBM Plex Sans","Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:var(--base);font-weight:400;line-height:1.62}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:"Archivo",Helvetica,Arial,sans-serif;letter-spacing:-.015em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+p{margin:0 0 18px}
+a{color:var(--linha-texto)}
+
+/* -------- barra -------- */
+.topo{position:sticky;top:0;z-index:40;background:var(--preto);color:#fff;border-bottom:1px solid #1d1d1d}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none}
+.topoCta{display:none;align-items:center;gap:14px}
+.topoCta.on{display:flex}
+.topoCta .p{font-family:"Archivo",sans-serif;font-weight:800;font-size:22px;color:#fff;line-height:1}
+.topoCta .btn{font-size:16px;padding:11px 20px;min-height:44px}
+.az{display:flex;gap:6px;align-items:center}
+.az span{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;color:#A9B4BC;text-transform:uppercase;margin-right:2px}
+.az button{font:inherit;font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600;line-height:1;
+  padding:7px 11px;border:1px solid #3A4249;background:transparent;color:#fff;border-radius:3px;cursor:pointer}
+.az button:hover{border-color:var(--linha-neg);color:var(--linha-neg)}
+.az button:focus-visible{outline:2px solid var(--linha-neg);outline-offset:2px}
+
+/* -------- botão -------- */
+.btn{display:inline-block;background:var(--acao);color:#fff;text-decoration:none;
+  font-family:"Archivo",sans-serif;font-weight:700;font-size:20px;
+  padding:18px 34px;border-radius:3px;border:0;cursor:pointer;min-height:56px;line-height:1.1}
+.btn:hover{background:var(--acao-h)}
+.btn:focus-visible{outline:3px solid var(--linha-texto);outline-offset:3px}
+.btn-s{font-size:16px;padding:12px 20px;min-height:46px}
+
+/* -------- capa de produto -------- */
+.capa{background:var(--preto)}
+.capa img{width:100%;aspect-ratio:2/1;object-fit:cover;object-position:center}
+
+/* -------- capa de vitrine -------- */
+.capa-vit{background:var(--preto);color:#fff;padding:70px 0 74px}
+.capa-vit .kicker{color:var(--linha-neg)}
+.capa-vit h1{font-size:clamp(34px,5vw,58px);line-height:1.06;font-weight:800;margin:0 0 22px;max-width:16em}
+.capa-vit .capa-sub{color:#DCE3E7;font-size:20px;max-width:40em;margin:0}
+
+/* -------- oferta -------- */
+.oferta{padding:56px 0 8px}
+.oferta-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:52px;align-items:start}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--linha-texto);font-weight:600;margin:0 0 20px}
+h1{font-size:clamp(32px,4.4vw,52px);line-height:1.08;font-weight:800;margin:0 0 20px}
+.sub{font-size:21px;color:var(--tinta2);margin:0 0 28px;max-width:34em}
+.precoLinha{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:0 0 22px}
+.preco{font-family:"Archivo",sans-serif;font-size:42px;font-weight:800;color:var(--acao);line-height:1}
+.precoNota{font-size:16.5px;color:var(--tinta2)}
+.garantia{margin:16px 0 0;font-size:16.5px;color:var(--tinta2)}
+.invlado{border:1px solid var(--borda);border-top:4px solid var(--linha);padding:24px;background:var(--papel2)}
+.invlado-r{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--linha-texto);font-weight:600;margin:0 0 14px}
+.invlado ul{list-style:none;margin:0 0 14px;padding:0}
+.invlado li{padding:8px 0;border-bottom:1px solid var(--borda);font-size:17px}
+.invlado li:last-child{border-bottom:0}
+.invlado li b{font-family:"Archivo",sans-serif;font-size:22px;font-weight:800;color:var(--linha-texto);margin-right:8px}
+
+/* -------- seções -------- */
+.sec{padding:56px 0}
+.sec.cinza{background:var(--papel2);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda)}
+.sec-num{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--linha-texto);font-weight:600;margin:0 0 10px}
+h2{font-size:clamp(26px,3vw,36px);font-weight:800;margin:0 0 6px}
+.regua{height:4px;width:88px;background:var(--linha);margin:0 0 26px}
+.lead{font-size:21px;color:var(--tinta2);max-width:38em}
+.corpo{max-width:36em}
+.nota{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.06em;color:var(--tinta2)}
+
+/* -------- inventário -------- */
+.inv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:8px 0 0}
+.inv .cel{border:1px solid var(--borda);border-top:4px solid var(--linha);padding:20px 18px;background:#fff}
+.inv .n{font-family:"Archivo",sans-serif;font-size:40px;font-weight:800;line-height:1;color:var(--linha-texto);margin-bottom:8px}
+.inv .r{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tinta2);line-height:1.45}
+
+/* -------- composição do pacote -------- */
+.comps{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:22px;margin-top:28px}
+.comp{display:block;text-decoration:none;color:inherit}
+.comp img{border:1px solid var(--borda);margin-bottom:12px}
+.comp-n{display:block;font-family:"Archivo",sans-serif;font-weight:700;font-size:19px;line-height:1.2;margin-bottom:6px}
+.comp-s{display:block;font-size:15.5px;color:var(--tinta2);line-height:1.45}
+
+/* -------- bloco preto -------- */
+.naoentrega{background:var(--preto);color:#fff;padding:56px 0}
+.naoentrega .sec-num{color:var(--linha-neg)}
+.naoentrega h2{color:#fff}
+.naoentrega .regua{background:var(--linha-neg)}
+.naoentrega p{color:#DCE3E7;max-width:38em;font-size:20px;margin:0}
+
+/* -------- entrega -------- */
+.entrega{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0 0}
+.entrega .it{border-left:4px solid var(--linha);background:var(--linha-caixa);padding:18px 22px}
+.entrega .it .r{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--linha-texto);font-weight:600;margin-bottom:6px}
+.entrega .it .v{font-size:18px}
+
+/* -------- faixa e fecho -------- */
+.faixa{background:var(--papel2);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda);padding:18px 0;text-align:center}
+.faixa span{font-family:"IBM Plex Mono",monospace;font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta2);font-weight:600}
+.fecho{padding:60px 0 76px;text-align:center}
+.fecho h2{margin-bottom:14px}
+.fecho .sub{margin:0 auto 26px}
+.fecho .precoLinha{justify-content:center}
+
+/* -------- catálogo -------- */
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:26px;margin-top:6px}
+.card{border:1px solid var(--borda);border-top:5px solid var(--c);background:#fff;display:flex;flex-direction:column}
+.card>img{border-bottom:1px solid var(--borda)}
+.card-corpo{padding:22px;display:flex;flex-direction:column;flex:1}
+.card-inv{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ct);font-weight:600;margin:0 0 10px}
+.card h3{font-size:24px;font-weight:800;margin:0 0 8px;line-height:1.15}
+.card-sub{font-size:16.5px;color:var(--tinta2);line-height:1.5;margin:0 0 20px}
+.card-pe{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.card-preco{font-family:"Archivo",sans-serif;font-size:26px;font-weight:800;color:var(--acao);line-height:1}
+
+.packs{display:grid;gap:22px;margin-top:6px}
+.pack{border:1px solid var(--borda);border-left:6px solid var(--c);background:var(--cx);
+  display:grid;grid-template-columns:1fr auto;gap:32px;padding:28px 30px;align-items:center}
+.pack h3{font-size:28px;font-weight:800;margin:0 0 8px;line-height:1.15}
+.pack .card-sub{margin-bottom:18px;max-width:42em}
+.pack-capas{display:flex;gap:8px}
+.pack-capas img{width:64px;border:1px solid var(--borda)}
+
+/* -------- rodapé -------- */
+footer{background:var(--preto);color:#A9B4BC;padding:44px 0 52px;font-size:16px}
+footer a{color:#DCE3E7}
+footer .rod{margin:18px 0 0;max-width:42em}
+footer .end{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#6C7A83;margin-top:20px}
+
+/* -------- barra do celular -------- */
+.barraMob{display:none}
+
+@media (max-width:980px){
+  .oferta-grid{grid-template-columns:1fr;gap:32px}
+  .entrega{grid-template-columns:1fr}
+  .pack{grid-template-columns:1fr;gap:22px}
+  .pack-capas{flex-wrap:wrap}
+}
+@media (max-width:820px){
+  .topo .selo{display:none}
+  .az span{display:none}
+  .az button:last-child{display:none}
+  .topoCta .p{display:none}
+}
+@media (max-width:640px){
+  :root{--base:18px}
+  .topoCta{display:none!important}
+  .sec{padding:42px 0}
+  .capa img{aspect-ratio:16/10}
+  .capa-vit{padding:48px 0 52px}
+  body{padding-bottom:84px}
+  .barraMob{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;
+    border-top:1px solid var(--borda);padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -6px 18px rgba(0,0,0,.08)}
+  .barraMob .p{font-family:"Archivo",sans-serif;font-weight:800;font-size:26px;color:var(--acao);line-height:1}
+  .barraMob .btn{font-size:17px;padding:14px 20px;min-height:48px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* -------- blocos próprios de produto (portas, critérios) -------- */
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 0}
+.porta{border:1px solid var(--borda);border-left:4px solid var(--linha);padding:24px;background:#fff;
+  display:flex;flex-direction:column;justify-content:space-between;min-height:128px}
+.porta .p{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--linha-texto);font-weight:600;margin-bottom:10px}
+.porta .t{font-family:"Archivo",sans-serif;font-size:23px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
+@media (max-width:980px){.portas{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.portas{grid-template-columns:1fr}}
