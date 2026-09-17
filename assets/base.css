@@ -142,6 +142,7 @@ h2{font-size:clamp(26px,3vw,36px);font-weight:800;margin:0 0 6px}
   display:grid;grid-template-columns:1fr auto;gap:32px;padding:28px 30px;align-items:center}
 .pack h3{font-size:28px;font-weight:800;margin:0 0 8px;line-height:1.15}
 .pack .card-sub{margin-bottom:18px;max-width:42em}
+.pack .card-pe{flex-direction:column;align-items:flex-start;gap:14px}
 .pack-capas{display:flex;gap:8px}
 .pack-capas img{width:64px;border:1px solid var(--borda)}
 
