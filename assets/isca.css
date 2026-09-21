@@ -10,12 +10,10 @@
 .captura .campo label{display:block;font-family:"IBM Plex Mono",monospace;font-size:12.5px;
   letter-spacing:.14em;text-transform:uppercase;color:var(--linha-texto);
   font-weight:600;margin:0 0 7px}
-.captura input[type=text],
-.captura input[type=email]{width:100%;font:inherit;font-size:18px;color:var(--tinta);
+.captura .campo input{width:100%;font:inherit;font-size:18px;color:var(--tinta);
   background:var(--papel2);border:1px solid var(--borda);border-radius:3px;
   padding:13px 14px;min-height:50px}
-.captura input[type=text]:focus,
-.captura input[type=email]:focus{outline:3px solid var(--linha-neg);outline-offset:2px;
+.captura .campo input:focus{outline:3px solid var(--linha-neg);outline-offset:2px;
   border-color:var(--linha);background:#fff}
 
 .consent{display:flex;gap:11px;align-items:flex-start;margin:20px 0 22px;
@@ -35,3 +33,6 @@
 @media (max-width:640px){
   .captura{padding:22px}
 }
+
+.captura .dica{margin:6px 0 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;
+  letter-spacing:.02em;color:var(--tinta2)}

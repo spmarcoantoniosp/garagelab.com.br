@@ -91,16 +91,33 @@
   <p class="sec-num">07 · Receber</p><h2>Receba a cartilha</h2><div class="regua"></div>
   <p class="lead" style="margin-bottom:28px">Preencha e o link chega no seu e-mail. Sem cadastro de cartão e sem checkout.</p>
 
-  <form class="captura" method="POST" action="PREENCHER_COM_A_URL_DO_FORMULARIO_DO_PROVEDOR">
+  <form class="captura" method="POST" action="PREENCHER_COM_A_URL_sibforms_DO_FORMULARIO_BREVO">
     <input type="hidden" name="email_address_check" value=""><input type="hidden" name="locale" value="pt">
-    <div class="campo">
-      <label for="c-nome">Nome</label>
-      <input id="c-nome" type="text" name="NOME" autocomplete="given-name" required>
-    </div>
-    <div class="campo">
-      <label for="c-email">E-mail</label>
-      <input id="c-email" type="email" name="EMAIL" autocomplete="email" required>
-    </div>
+          
+          <div class="campo">
+            <label for="c-nome">Nome</label>
+            <input id="c-nome" type="text" name="NOME" autocomplete="given-name" required>
+            
+          </div>
+          
+          <div class="campo">
+            <label for="c-sobrenome">Sobrenome</label>
+            <input id="c-sobrenome" type="text" name="SOBRENOME" autocomplete="family-name" required>
+            
+          </div>
+          
+          <div class="campo">
+            <label for="c-email">E-mail</label>
+            <input id="c-email" type="email" name="EMAIL" autocomplete="email" required>
+            
+          </div>
+          
+          <div class="campo">
+            <label for="c-whatsapp">WhatsApp</label>
+            <input id="c-whatsapp" type="tel" name="WHATSAPP" autocomplete="tel" required>
+            <p class="dica">Com DDD, no formato 11 91234-5678.</p>
+          </div>
+          
     <label class="consent">
       <input type="checkbox" name="OPT_IN" value="1" required>
       <span>Aceito receber a cartilha e outros materiais da Garage Labs por e-mail. Posso sair da lista em qualquer mensagem.</span>
