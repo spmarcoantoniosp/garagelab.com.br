@@ -181,6 +181,23 @@
     });
   });
 
+  // Origem: ?de=li na URL divulgada vira "LinkedIn" na ficha do contato.
+  // O campo só existe se o título declarar formulario.campo_origem no JSON.
+  var origem = form.querySelector('#c-origem');
+  if (origem) {
+    var CANAIS = {
+      li: 'LinkedIn', 'li-post': 'LinkedIn post', 'li-bio': 'LinkedIn perfil',
+      ig: 'Instagram', 'ig-bio': 'Instagram bio', 'ig-story': 'Instagram story',
+      wa: 'WhatsApp', nl: 'Newsletter', yt: 'YouTube', qr: 'QR code'
+    };
+    var de = '';
+    try {
+      de = new URLSearchParams(window.location.search).get('de') || '';
+    } catch (e) { de = ''; }
+    de = de.toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 24);
+    if (de) origem.value = CANAIS[de] || de;
+  }
+
   var consentimento = form.querySelector('.consent input[type=checkbox]');
 
   form.addEventListener('submit', function (evento) {
