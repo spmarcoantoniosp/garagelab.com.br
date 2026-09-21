@@ -49,3 +49,9 @@
 .msg-sugestao button:hover{color:var(--acao)}
 .consent.com-erro{color:var(--acao)}
 .consent.com-erro input{outline:2px solid var(--acao);outline-offset:2px}
+
+/* -------- capa com banner -------- */
+/* O chassi corta a capa em 2:1. Os banners da isca sao compostos em
+   16:9, entao a proporcao e ajustada aqui, so nas paginas de isca. */
+.capa{display:block}
+.capa img{aspect-ratio:16/9}
