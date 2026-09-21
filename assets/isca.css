@@ -36,3 +36,16 @@
 
 .captura .dica{margin:6px 0 0;font-family:"IBM Plex Mono",monospace;font-size:12.5px;
   letter-spacing:.02em;color:var(--tinta2)}
+
+/* -------- estados de validação -------- */
+.captura .campo.com-erro input{border-color:var(--acao);background:#fff}
+.captura .campo.com-erro label{color:var(--acao)}
+.msg-erro{margin:7px 0 0;font-family:"IBM Plex Mono",monospace;font-size:13px;
+  letter-spacing:.02em;color:var(--acao);font-weight:600}
+.msg-sugestao{margin:7px 0 0;font-size:15.5px;color:var(--tinta2)}
+.msg-sugestao button{font:inherit;font-weight:600;color:var(--linha-texto);
+  background:none;border:0;border-bottom:1px solid currentColor;
+  padding:0;cursor:pointer}
+.msg-sugestao button:hover{color:var(--acao)}
+.consent.com-erro{color:var(--acao)}
+.consent.com-erro input{outline:2px solid var(--acao);outline-offset:2px}
