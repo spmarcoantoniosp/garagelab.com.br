@@ -17,7 +17,7 @@ Sem build, sem framework, sem dependência de pacote. HTML, um CSS e um JS. Publ
 | `/o-painel-esconde/` | LH-103 | Página dedicada · R$ 47 · entrada da escada comercial |
 | `/colecao-portfolio-e-projetos/` | KIT-TRILHA | Página dedicada · R$ 97 |
 | `/colecao-indicadores-e-metricas/` | KIT-COLECAO | Página dedicada · R$ 97 |
-| `/biblioteca-garage-labs/` | KIT-BIBLIOTECA | Página dedicada · R$ 167 |
+| `/biblioteca-garage-labs/` | KIT-BIBLIOTECA | Página dedicada · R$ 197 |
 | `/biblioteca-garage-music/` | KIT-MUSIC | Página dedicada · R$ 127 |
 
 Mais `assets/`, `img/` (uma pasta por código de produto), `404.html`, `robots.txt`, `sitemap.xml` e `CNAME`.
